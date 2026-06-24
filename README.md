@@ -4,6 +4,8 @@
 
 DevPulse is a full-stack developer analytics platform that passively tracks your coding activity, context switches, and deep-work periods. It consists of a VS Code Extension, a Spring Boot Java backend, and a Next.js dashboard.
 
+![DevPulse Dashboard Preview](assets/dashboard.png)
+
 ---
 
 ## 🚀 Features
@@ -84,7 +86,7 @@ API calls from the extension to the backend are authenticated via generated API 
 Want to track your own coding flow? Setting up DevPulse takes less than 2 minutes!
 
 ### 1. Install the VS Code Extension
-1. Download the `devpulse-extension-0.1.0.vsix` file (you can get it from the creator or the Releases page if available).
+1. Download the `devpulse-extension-0.1.0.vsix` file from the root of this repository (or from the Releases page).
 2. Open VS Code and press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac) to open the Command Palette.
 3. Type **"Install from VSIX"** and hit Enter.
 4. Select the `.vsix` file you just downloaded to install the extension.
