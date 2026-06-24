@@ -126,8 +126,9 @@ public class DashboardService {
     Map<String, String> languages = new HashMap<>();
     stats.flowSessions().forEach(session -> totals.merge(session.repo() == null ? "unknown" : session.repo(), session.durationMs(), Long::sum));
     stats.events().forEach(event -> {
-      if (event.getRepo() != null && event.getLanguage() != null) {
-        languages.putIfAbsent(event.getRepo(), event.getLanguage());
+      String repoName = event.getRepo() == null ? "unknown" : event.getRepo();
+      if (event.getLanguage() != null) {
+        languages.putIfAbsent(repoName, event.getLanguage());
       }
     });
     long total = Math.max(1, stats.totalActiveMs());
