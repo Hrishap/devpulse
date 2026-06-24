@@ -26,7 +26,7 @@ export class FileTracker {
   }
 
   private async emitForDocument(eventType: EventType, document: vscode.TextDocument): Promise<void> {
-    if (document.uri.scheme !== "file") {
+    if (document.uri.scheme !== "file" && document.uri.scheme !== "untitled") {
       return;
     }
     const git = await this.gitTracker.current(document);
