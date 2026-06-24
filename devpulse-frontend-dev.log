@@ -1,0 +1,27 @@
+
+> devpulse-frontend@0.1.0 dev
+> next dev --port 3000
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.12:3000
+✓ Ready in 773ms
+
+○ Compiling /dashboard/settings ...
+ GET /dashboard/settings 200 in 5.5s (next.js: 5.0s, application-code: 525ms)
+ GET /dashboard 200 in 2.2s (next.js: 1990ms, application-code: 247ms)
+ GET /dashboard/settings 200 in 165ms (next.js: 9ms, application-code: 155ms)
+ GET /dashboard/settings 200 in 135ms (next.js: 15ms, application-code: 120ms)
+ GET / 307 in 769ms (next.js: 704ms, application-code: 64ms)
+ GET /dashboard 200 in 39ms (next.js: 4ms, application-code: 35ms)
+ GET /dashboard/settings 200 in 75ms (next.js: 5ms, application-code: 69ms)
+ GET /dashboard 200 in 106ms (next.js: 18ms, application-code: 87ms)
+ GET /dashboard 200 in 224ms (next.js: 6ms, application-code: 217ms)
+ GET / 307 in 189ms (next.js: 26ms, application-code: 163ms)
+ GET /dashboard 200 in 110ms (next.js: 10ms, application-code: 100ms)
+ GET /dashboard/settings 200 in 200ms (next.js: 7ms, application-code: 194ms)
+ GET /dashboard 200 in 205ms (next.js: 49ms, application-code: 156ms)
+ GET /login 200 in 782ms (next.js: 726ms, application-code: 56ms)
+ GET /register 200 in 817ms (next.js: 769ms, application-code: 48ms)
+ GET /dashboard 200 in 41ms (next.js: 5ms, application-code: 36ms)
+[?25h

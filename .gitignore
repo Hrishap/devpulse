@@ -1,0 +1,8 @@
+node_modules/
+.next/
+dist/
+target/
+*.vsix
+.env.local
+.env
+.railway/

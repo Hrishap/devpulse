@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --color-brand: #7A4CF6;
+  --color-brand-light: #CBB8F9;
+  --color-brand-pale: #E8E0FD;
+  --color-bg: #0B0914;
+  --color-surface: rgba(26, 23, 48, 0.65);
+  --color-surface-2: rgba(36, 31, 58, 0.8);
+  --color-text-1: #F8F7FF;
+  --color-text-2: #B5ADD6;
+  --color-text-3: #6E6691;
+  --color-flow: #7A4CF6;
+  --color-active: #9B72F7;
+  --color-idle: #31284A;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: radial-gradient(circle at top left, rgba(122, 76, 246, 0.15) 0%, rgba(11, 9, 20, 1) 40%),
+              radial-gradient(circle at bottom right, rgba(40, 20, 100, 0.1) 0%, rgba(11, 9, 20, 1) 60%);
+  background-attachment: fixed;
+  color: var(--color-text-1);
+}
+
+body {
+  margin: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-3);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion-safe-pulse {
+    animation: pulse 1.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}

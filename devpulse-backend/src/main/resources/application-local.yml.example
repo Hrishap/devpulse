@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/devpulse
+    username: devpulse
+    password: devpulse
+
+devpulse:
+  cors-allowed-origins: http://localhost:3000
