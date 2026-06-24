@@ -79,25 +79,31 @@ API calls from the extension to the backend are authenticated via generated API 
 
 ---
 
-## 🤝 Trying it out (Onboarding)
+## 🤝 Getting Started (How to use this)
 
-If you want to invite a friend or colleague to try DevPulse, they can easily join your cloud-hosted instance:
+Want to track your own coding flow? Setting up DevPulse takes less than 2 minutes!
 
-1. **Install the Extension**
-   - Share the packaged `devpulse-extension-0.1.0.vsix` file with them.
-   - In VS Code, open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
-   - Run **Extensions: Install from VSIX...** and select the file.
-2. **Create an Account**
-   - Have them visit the live dashboard (e.g. `https://devpulse-frontend-umber.vercel.app/register`).
-   - They can sign up with their email and password. Their data will be completely isolated from yours.
-3. **Get their API Key**
-   - Once logged in, navigate to the **Settings** page on the dashboard to view and copy their auto-generated API Key.
-4. **Link VS Code**
-   - In VS Code, open Settings (`Ctrl+,` or `Cmd+,`).
-   - Search for **"DevPulse"**.
-   - Paste their copied API Key into the `Devpulse: Api Key` setting. *(The API URL is already pre-configured for the production server).*
-5. **Start Coding!**
-   - The extension will securely and silently transmit their coding activity. They can watch their Flow Score update in real-time on the dashboard!
+### 1. Install the VS Code Extension
+1. Download the `devpulse-extension-0.1.0.vsix` file (you can get it from the creator or the Releases page if available).
+2. Open VS Code and press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac) to open the Command Palette.
+3. Type **"Install from VSIX"** and hit Enter.
+4. Select the `.vsix` file you just downloaded to install the extension.
+
+### 2. Create Your Account
+1. Visit the live dashboard: **[DevPulse Dashboard](https://devpulse-frontend-umber.vercel.app/register)**.
+2. Sign up with your email and a password. (Your data is completely private and isolated).
+
+### 3. Get Your API Key
+1. Once logged in to the dashboard, click on the **Settings** tab.
+2. You will see an automatically generated **API Key**. Copy this key to your clipboard.
+
+### 4. Link VS Code to Your Dashboard
+1. Go back to VS Code and open your Settings by pressing `Ctrl+,` (or `Cmd+,` on Mac).
+2. Type **"DevPulse"** in the settings search bar.
+3. Paste the API Key you copied into the `Devpulse: Api Key` field. 
+
+### 5. Start Coding!
+That's it! DevPulse is now running silently in the background. As you write code, switch files, or change repositories, it securely transmits your activity. Open the [web dashboard](https://devpulse-frontend-umber.vercel.app/dashboard) to watch your Flow Score update in real-time!
 
 ---
 *Built with ❤️ for developers who love to flow.*
