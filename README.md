@@ -78,4 +78,26 @@ Ensure you set the appropriate environment variables (`DATABASE_URL`, `CORS_ALLO
 API calls from the extension to the backend are authenticated via generated API keys. Users must register to receive a unique token, which is stored locally and transmitted securely.
 
 ---
+
+## 🤝 Trying it out (Onboarding)
+
+If you want to invite a friend or colleague to try DevPulse, they can easily join your cloud-hosted instance:
+
+1. **Install the Extension**
+   - Share the packaged `devpulse-extension-0.1.0.vsix` file with them.
+   - In VS Code, open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+   - Run **Extensions: Install from VSIX...** and select the file.
+2. **Create an Account**
+   - Have them visit the live dashboard (e.g. `https://devpulse-frontend-umber.vercel.app/register`).
+   - They can sign up with their email and password. Their data will be completely isolated from yours.
+3. **Get their API Key**
+   - Once logged in, navigate to the **Settings** page on the dashboard to view and copy their auto-generated API Key.
+4. **Link VS Code**
+   - In VS Code, open Settings (`Ctrl+,` or `Cmd+,`).
+   - Search for **"DevPulse"**.
+   - Paste their copied API Key into the `Devpulse: Api Key` setting. *(The API URL is already pre-configured for the production server).*
+5. **Start Coding!**
+   - The extension will securely and silently transmit their coding activity. They can watch their Flow Score update in real-time on the dashboard!
+
+---
 *Built with ❤️ for developers who love to flow.*
